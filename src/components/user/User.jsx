@@ -1,28 +1,30 @@
 import './_signUp.scss';
+import {createUser, function1} from './User.service';
 
 function  User() {
-    return <div class="form-container">
-        <form action="" class="signUp-form">
-            <h2 class="title">Create user</h2>
-            <label for="Name" class="label">
-                Name <input type="text" class="input name" id="Name"/>
+    return <div className="form-container">
+        <form className="signUp-form">
+            <h2 className="title">Create user</h2>
+            <label htmlFor="Name" className="label">
+                Name <input type="text" className="input name" id="Name"/>
             </label>
-            <label for="lastName" class="label">
-                Last Name <input type="text" class="input lastName" id="lastName"/>
+            <label htmlFor="lastName" className="label">
+                Last Name <input type="text" className="input lastName" id="lastName"/>
             </label>
-            <label for="email" class="label">
-                Email <input type="email" class="input email" id="email"/>
+            <label htmlFor="email" className="label">
+                Email <input type="email" className="input email" id="email"/>
             </label>
-            <label for="profile" class="label">
-                Profile <input type="text" class="input profile" id="profile"/>
+            <label htmlFor="profile" className="label">
+                Profile <input type="text" className="input profile" id="profile"/>
             </label>
-            <label for="password" class="label">
-                Password <input type="password" class="input password" id="password"/>
+            <label htmlFor="password" className="label">
+                Password <input type="password" className="input password" id="password"/>
             </label>
-            <label for="repeatPassword" class="label">
-                Repeat Password <input type="password" class="input repeatPassword" id="repeatPassword"/>
+            <label htmlFor="repeatPassword" className="label">
+                Repeat Password <input type="password" className="input repeatPassword" id="repeatPassword"/>
             </label>
-            <input type="submit" class="button-send button-create input" value="CREATE"/>
+            <input onClick={createUser()} type="submit" className="button-send input" value="CREATE"/>
+            {function1('Julian Rincon')}
         </form>
     </div>
 }

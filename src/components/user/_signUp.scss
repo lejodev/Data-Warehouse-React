@@ -31,5 +31,8 @@
                 box-sizing: border-box;
             }
         }
+        input.button-send {
+            align-self: flex-end;
+        }
     }
 }

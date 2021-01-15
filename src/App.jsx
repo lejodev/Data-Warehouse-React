@@ -16,8 +16,8 @@ function App() {
   return (
     <div>
       <Header />
-      <ManageContacts/>
-      {/* <User /> */}
+      {/* <ManageContacts/> */}
+      <User />
     </div>
   );
 }
